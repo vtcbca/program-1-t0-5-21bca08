@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+   int no,a,sum=0;
+   clrscr ();
+   printf ("Enter any nuber:");
+   scanf ("%d", &no);
+   while (no>0)
+   {
+      a=no%10;
+      no=no/10;
+      sum=sum+a;
+   }
+    printf ("Sum of Digit=%d", sum);
+   getch ();
+}

@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int n,p,a,sum=0;
+    clrscr ();
+    printf ("Enter Any Number:");
+    scanf ("%d", &n);
+    p=n;
+    while (p!=0)
+    {
+	a=p%10;
+	sum=sum*10+a;
+	p=p/10;
+    }
+    if (sum==n)
+	printf ("Yes! It is a Pelidrome Number:%d", sum);
+    else
+	printf ("No! It is not a Pelideomr number:%d", sum);
+ getch ();
+}
